@@ -15,7 +15,7 @@ def help(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="List of all commands: \n 1. /whereami  - Current Location\n 2. /letsgo  - Check whether before you go \n 3. /start  - Description of the bot \n 4. /help  - List of all commands")
 
 
-    def letsgo(update, context):
+def letsgo(update, context):
     api_endpoint = "https://api.openweathermap.org/data/2.5/weather"
     api_key = "8927948f22cdd28e1fc7562a80631900"
     location = "Chennai"
