@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Here</title>
+ <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.1/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-200">
+
+  <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+    <h2 class="text-center text-2xl font-bold mb-5">Create an Account</h2>
+
+	<div class="signup-form">
+      <form action="{{url_for('signup')}}" method="POST">
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="name">
+          Name
+        </label>
+        <input class="border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full" id="name" type="text" placeholder="Your name">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="email">
+          Email Address
+        </label>
+        <input class="border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full" id="email" type="email" placeholder="example@example.com">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2" for="password">
+          Password
+        </label>
+        <input class="border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full" id="password" type="password" placeholder="********">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2" for="confirm-password">
+          Confirm Password
+        </label>
+        <input class="border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full" id="confirm-password" type="password" placeholder="********">
+      </div>
+      <div class="flex items-center justify-between">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded focus:outline-none focus:shadow-outline w-full" type="button">
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </div>
+  </div>
+</body>
+</html>
